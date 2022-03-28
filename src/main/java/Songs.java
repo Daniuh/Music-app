@@ -6,10 +6,10 @@ public class Songs {
     private int id;
     private String gender; //Género
     private String cover; //Título
-    private Date date; //Fecha de creación de la canción
+    private Integer date; //Fecha de creación de la canción
     private String description; //Descripción
 
-    public Songs(String title, int id, String gender, String cover, Date date, String description){
+    public Songs(String title, int id, String gender, String cover, Integer date, String description){
         this.title = title;
         this.id = id;
         this.gender = gender; //Género
