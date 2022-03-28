@@ -1,5 +1,6 @@
 # Music-app
 -----------------------------------------
+
 Taller practico en parejas 
 
     Ejercicios prácticos de buenas practicas de POO
@@ -13,12 +14,13 @@ Taller practico en parejas
       - Filtrar canciones en el mismo año
     Se debe crear comportamientos en donde se permita ordenar duración y fecha.
 
+DIRECTRICES DE ENTREGA:
 
-  DIRECTRICES DE ENTREGA:
     - Se debe hacer la entrega en un repositorio de control de versión como github.
     - El proyecto debe ser colaborativo, por ende se debe tener commits de los dos participante de forma equitativa 
     - El proyecto debe tener las buenas practicas de programación mencionadas
     - Debes usar principios de programación orientada a objectos.
+    
 -----------------------------------------
 
 Trabajo elaborado por:
