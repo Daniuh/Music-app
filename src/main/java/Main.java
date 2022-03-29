@@ -7,41 +7,46 @@ public class Main {
 
     private static List <Songs> listSongs = new ArrayList<Songs>();
     static Scanner read = new Scanner(System.in);
+    static Scanner readDouble = new Scanner(System.in);
 
     public static Songs createSong(){
-        System.out.print("Ingrese el título de la canción: " );
+        System.out.print("Ingrese el título de la canción: ");
         String title = read.nextLine();
 
-        System.out.print("\nIngrese el género de la canción: " );
+        System.out.print("\nIngrese el artista de la canción: ");
+        String artist = read.nextLine();
+
+        System.out.print("\nIngrese el género de la canción: ");
         String gender = read.nextLine();
 
-        System.out.print("\nIngrese la portada de la canción: " );
+        System.out.print("\nIngrese la portada de la canción: ");
         String cover = read.nextLine();
 
-        System.out.print("\nIngrese la descripción de la canción: " );
+        System.out.print("\nIngrese la duración de la canción: ");
+        double duration = readDouble.nextDouble();
+
+        System.out.print("\nIngrese la descripción de la canción: ");
         String description = read.nextLine();
 
-        System.out.print("\nIngrese la fecha de creación de la canción: (int)" );
+        System.out.print("\nIngrese la fecha de creación de la canción: ");
         String date = read.nextLine();
 
-        Songs tempSong = new Songs(title, 1, gender, cover, date,  description);
+        Songs tempSong = new Songs(title, gender, cover, date, description, duration, artist);
 
         return tempSong;
     }
 
     public static void saveSongs(Songs tempSong, List<Songs> listSongs){
-
         listSongs.add(tempSong);
-
     }
 
     public static void getSong(List<Songs> listSongs){
         Iterator<Songs> iter = listSongs.iterator();
+
         while (iter.hasNext()) {
             System.out.println(iter.next());
         }
     }
-
 
     public static void main(String[] args) {
         Scanner readInt = new Scanner(System.in);
@@ -61,10 +66,5 @@ public class Main {
 
         System.out.println("Listado de canciones: ");
         getSong(listSongs);
-
-
     }
-
-
 }
-
