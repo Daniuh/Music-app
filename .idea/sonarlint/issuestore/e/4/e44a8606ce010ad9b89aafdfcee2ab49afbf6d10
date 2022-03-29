@@ -1,0 +1,18 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ôå§Õ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(º˜¨¢ÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(æô¾èıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÌÜÿœúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(×£ìÈúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ŒìÚ±
+M	java:S106"9Replace this use of System.out or System.err by a logger.(Óøà,
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(œ¡â—üÿÿÿÿ
+N	java:S1068"9Replace this use of System.out or System.err by a logger.(²‡Û´
+N	java:S106="9Replace this use of System.out or System.err by a logger.(¢‡øå
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(›íÚ«
+N	java:S106?"9Replace this use of System.out or System.err by a logger.(Ü¼àÖ
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(»‰ÿ¬üÿÿÿÿ
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(…
+v
+java:S1488""`Immediately return this expression instead of assigning it to the temporary variable "tempSong".(¸‘²¼
