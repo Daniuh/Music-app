@@ -47,7 +47,7 @@ public class Main {
             System.out.println(iter.next());
         }
     }
-    
+
 
     public static void main(String[] args) {
         Scanner readInt = new Scanner(System.in);
