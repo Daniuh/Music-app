@@ -9,20 +9,20 @@ En pareja diseñar una aplicación que administre una lista de canciones, se deb
 
    - Una biblioteca principal con todas las canciones 
    
-Se debe tener una funcionalidad que permita crear playlist con canciones determinadas 
+   - Se debe tener una funcionalidad que permita crear playlist con canciones determinadas 
    Cada canción debe tener: 
-- Título 
-- Identificador 
-- Fecha 
-- Duración 
-- Género 
-- Carátula y, 
-- Descripción corta.
+      - Título 
+      - Identificador 
+      - Fecha 
+      - Duración 
+      - Género 
+      - Carátula y, 
+      - Descripción corta.
    
-Se debe crear comportamientos en donde se permita hacer filtros a la biblioteca principal, los filtros son:
+   - Se debe crear comportamientos en donde se permita hacer filtros a la biblioteca principal, los filtros son:
    
-   - Filtrar canciones del mismo género
-   - Filtrar canciones en el mismo año 
+      - Filtrar canciones del mismo género
+      - Filtrar canciones en el mismo año 
    - Se debe crear comportamientos en donde se permita ordenar duración y fecha.
 
 DIRECTRICES DE ENTREGA:
