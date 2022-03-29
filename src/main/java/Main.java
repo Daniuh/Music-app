@@ -9,7 +9,7 @@ public class Main {
     static Scanner read = new Scanner(System.in);
     static Scanner readDouble = new Scanner(System.in);
 
-    public static Songs createSong(){
+    public static Songs createSong(int id){
         System.out.print("Ingrese el título de la canción: ");
         String title = read.nextLine();
 
@@ -23,15 +23,15 @@ public class Main {
         String cover = read.nextLine();
 
         System.out.print("\nIngrese la duración de la canción: ");
-        double duration = readDouble.nextDouble();
+        double duration = read.nextDouble();
 
         System.out.print("\nIngrese la descripción de la canción: ");
-        String description = read.nextLine();
+        String description = readDouble.nextLine();
 
         System.out.print("\nIngrese la fecha de creación de la canción: ");
         String date = read.nextLine();
 
-        Songs tempSong = new Songs(title, gender, cover, date, description, duration, artist);
+        Songs tempSong = new Songs(title, gender, cover, date, description, duration, artist, id);
 
         return tempSong;
     }
@@ -48,14 +48,18 @@ public class Main {
         }
     }
 
+    //public static void autoGenerateId(){
+
+    //}
+
     public static void main(String[] args) {
         Scanner readInt = new Scanner(System.in);
         int decisionPerson;
-
+        int id = 0;
         do {
             System.out.println("Agrega una canción ");
-
-            Songs tempSong = createSong();
+            id ++;
+            Songs tempSong = createSong(id);
             saveSongs(tempSong, listSongs);
 
             System.out.println("¿Desea agregar una canción a su biblioteca de música?");

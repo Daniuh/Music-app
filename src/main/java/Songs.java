@@ -1,6 +1,3 @@
-import java.lang.invoke.StringConcatException;
-import java.util.Date;
-
 public class Songs {
     private String title; //Titulo
     private Integer id;
@@ -11,9 +8,9 @@ public class Songs {
     private double duration; //Duración
     private String artist; //Artista
 
-    public Songs(String title, String gender, String cover, String date, String description, double duration, String artist){
+    public Songs(String title, String gender, String cover, String date, String description, double duration, String artist, int id){
         this.title = title;
-        this.id = (int)(Math.random()*10+1); //Genera un id aleatoriamente
+        this.id = id; //Genera un id aleatoriamente
         this.gender = gender; //Género
         this.cover = cover; //Título
         this.date = date; //Fecha de creación de la canción
