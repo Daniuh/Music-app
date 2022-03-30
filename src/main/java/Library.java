@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Library {
+<<<<<<< HEAD
 
     private String wantedGender;
     static Scanner read = new Scanner(System.in);
@@ -22,4 +23,6 @@ public class Library {
         return listSongs.stream().filter( x -> x.isGender()).collect(Collectors.toList());
     }
 
+=======
+>>>>>>> 3ef292ac5e24c241c9b860641b36e2f032c2a401
 }
