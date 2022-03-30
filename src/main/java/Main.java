@@ -8,9 +8,12 @@ public class Main {
     private static List <Songs> listSongs = new ArrayList<Songs>();
     static Scanner read = new Scanner(System.in);
 
-    public static Songs createSong(){
+    public static Songs createSong(int id){
         System.out.print("Ingrese el título de la canción: " );
         String title = read.nextLine();
+
+        System.out.print("\nIngrese el artista de la canción: ");
+        String artist = read.nextLine();
 
         System.out.print("\nIngrese el género de la canción: " );
         String gender = read.nextLine();
@@ -21,10 +24,10 @@ public class Main {
         System.out.print("\nIngrese la descripción de la canción: " );
         String description = read.nextLine();
 
-        System.out.print("\nIngrese la fecha de creación de la canción: (int)" );
+        System.out.print("\nIngrese la fecha de creación de la canción: " );
         String date = read.nextLine();
 
-        Songs tempSong = new Songs(title, 1, gender, cover, date,  description);
+        Songs tempSong = new Songs(title, artist, id, gender, cover, date,  description);
 
         return tempSong;
     }
@@ -42,26 +45,36 @@ public class Main {
         }
     }
 
+    public static void getFilterGender(List<Songs> listSongs){
+        Library library = new Library();
+        library.menuSongs(listSongs);
+    }
+
 
     public static void main(String[] args) {
+
         Scanner readInt = new Scanner(System.in);
         int decisionPerson;
 
+        int id = 0;
         do {
+            id ++;
             System.out.println("Agrega una canción ");
 
-            Songs tempSong = createSong();
+            Songs tempSong = createSong(id);
             saveSongs(tempSong, listSongs);
 
             System.out.println("¿Desea agregar una canción a su biblioteca de música?");
             System.out.println("1. Sí");
             System.out.println("2. No");
             decisionPerson = readInt.nextInt();
+
         }while (decisionPerson == 1);
 
         System.out.println("Listado de canciones: ");
         getSong(listSongs);
 
+        getFilterGender(listSongs);
 
     }
 
