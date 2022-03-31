@@ -6,10 +6,11 @@ import java.util.Scanner;
 public class Main {
 
     private static List <Songs> listSongs = new ArrayList<Songs>();
-    static Scanner read = new Scanner(System.in);
-    static Scanner readDouble = new Scanner(System.in);
+
 
     public static Songs createSong(int id){
+        Scanner read = new Scanner(System.in);
+        Scanner readDouble = new Scanner(System.in);
 
         System.out.print("Ingrese el título de la canción: " );
         String title = read.nextLine();
@@ -23,21 +24,22 @@ public class Main {
         System.out.print("\nIngrese la portada de la canción: ");
         String cover = read.nextLine();
 
-        System.out.print("\nIngrese la duración de la canción: ");
-        double duration = read.nextDouble();
-
         System.out.print("\nIngrese la fecha de creación de la canción: " );
         String date = read.nextLine();
 
         System.out.print("\nIngrese la descripción de la canción: ");
         String description = readDouble.nextLine();
 
+        System.out.print("\nIngrese la duración de la canción: ");
+        double duration = readDouble.nextDouble();
 
         Songs tempSong = new Songs(title, gender, cover, date, description, duration, artist, id);
 
 
         return tempSong;
+
     }
+
 
     public static void saveSongs(Songs tempSong, List<Songs> listSongs){
         listSongs.add(tempSong);

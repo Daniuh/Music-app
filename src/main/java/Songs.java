@@ -27,7 +27,6 @@ public class Songs {
         return "\n Título: " + this.title +
                 "\n Artista: " + this.artist +
                 "\n id: " + this.id +
-                "\n Artísta: " + this.artist +
                 "\n Género: " + this.gender +
                 "\n Portada: " + this.cover +
                 "\n Duración: " + this.duration +
@@ -35,8 +34,8 @@ public class Songs {
                 "\n Descripción: " + this.description;
     }
 
-    public boolean isGender() {
-        return comparisonGender = true;
+    public String isGender() {
+        return this.gender;
     }
 }
 
