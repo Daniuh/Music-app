@@ -8,15 +8,17 @@ public class Songs {
     private double duration; //Duración
     private String artist; //Artista
 
+
     public Songs(String title, String gender, String cover, String date, String description, double duration, String artist, int id){
         this.title = title;
-        this.id = id; //Genera un id aleatoriamente
+        this.id = id; //Genera un id
         this.gender = gender; //Género
         this.cover = cover; //Título
         this.date = date; //Fecha de creación de la canción
         this.description = description; //Descripción de la canción
         this.duration = duration; //Duración de la canción
-        this.artist = artist; //Artista que compuso la canción
+        this.artist = artist;//Artista que compuso la canción
+
     }
 
     @Override
@@ -31,5 +33,14 @@ public class Songs {
                 "\n Fecha de creación de la canción: " + this.date +
                 "\n Descripción: " + this.description;
     }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public Integer getId() {
+        return id;
+    }
 }
+
 
