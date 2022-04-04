@@ -7,7 +7,6 @@ public class Main {
 
     private static List <Songs> listSongs = new ArrayList<Songs>();
 
-
     public static Songs createSong(int id){
         Scanner read = new Scanner(System.in);
         Scanner readDouble = new Scanner(System.in);
@@ -39,7 +38,6 @@ public class Main {
         return tempSong;
 
     }
-
 
     public static void saveSongs(Songs tempSong, List<Songs> listSongs){
         listSongs.add(tempSong);

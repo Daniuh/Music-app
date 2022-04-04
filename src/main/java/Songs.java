@@ -7,11 +7,11 @@ public class Songs {
     private String description;//Descripción
     private double duration; //Duración
     private String artist; //Artista
-    private boolean comparisonGender;
+
 
     public Songs(String title, String gender, String cover, String date, String description, double duration, String artist, int id){
         this.title = title;
-        this.id = id; //Genera un id aleatoriamente
+        this.id = id; //Genera un id
         this.gender = gender; //Género
         this.cover = cover; //Título
         this.date = date; //Fecha de creación de la canción
@@ -34,8 +34,12 @@ public class Songs {
                 "\n Descripción: " + this.description;
     }
 
-    public String isGender() {
-        return this.gender;
+    public String getGender() {
+        return gender;
+    }
+
+    public Integer getId() {
+        return id;
     }
 }
 
